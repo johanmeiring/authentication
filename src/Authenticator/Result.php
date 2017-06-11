@@ -10,7 +10,7 @@
  * @link          http://cakephp.org CakePHP(tm) Project
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Authentication;
+namespace Authentication\Authenticator;
 
 use ArrayAccess;
 use InvalidArgumentException;
@@ -20,36 +20,6 @@ use InvalidArgumentException;
  */
 class Result implements ResultInterface
 {
-    /**
-     * General Failure
-     */
-    const FAILURE = 0;
-
-    /**
-     * Failure due to identity not being found.
-     */
-    const FAILURE_IDENTITY_NOT_FOUND = -1;
-
-    /**
-     * Failure due to invalid credential being supplied.
-     */
-    const FAILURE_CREDENTIAL_INVALID = -2;
-
-    /**
-     * Failure due to other circumstances.
-     */
-    const FAILURE_OTHER = -3;
-
-    /**
-     * The authentication credentials were not found in the request.
-     */
-    const FAILURE_CREDENTIALS_NOT_FOUND = -4;
-
-    /**
-     * Authentication success.
-     */
-    const SUCCESS = 1;
-
     /**
      * Authentication result code
      *
